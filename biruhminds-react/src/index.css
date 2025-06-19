@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles beyond Tailwind */
+html, body {
+  scroll-behavior: smooth;
+}
+
+.accent-gradient {
+  background: linear-gradient(to right, #10adbb, #207f8a);
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-lg hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+  
+  .btn-outline {
+    @apply inline-block px-6 py-3 border-2 border-primary text-primary font-medium rounded-lg hover:bg-primary/5 transition duration-300;
+  }
+}
