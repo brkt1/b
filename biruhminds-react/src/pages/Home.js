@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   useEffect(() => {
@@ -111,7 +112,10 @@ const Home = () => {
                   <span className="relative z-10">Explore Services</span>
                   <span className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition duration-300"></span>
                 </button>
-                <button className="px-10 py-4 rounded-xl font-semibold text-lg border-2 border-primary text-primary hover:bg-primary/5 transition duration-300 flex items-center gap-2">
+                <Link
+                  to="/contact"
+                  className="px-10 py-4 rounded-xl font-semibold text-lg border-2 border-primary text-primary hover:bg-primary/5 transition duration-300 flex items-center gap-2"
+                >
                   <span>Contact Us</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path
@@ -120,7 +124,7 @@ const Home = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </button>
+                </Link>
               </div>
 
               <div className="mt-12 flex items-center gap-6">

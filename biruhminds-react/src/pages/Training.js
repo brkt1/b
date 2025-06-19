@@ -270,41 +270,7 @@ const Training = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-16 bg-primary text-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6">What Our <span className="text-secondary">Clients Say</span></h2>
-            <p className="opacity-90">
-              Don't just take our word for it - hear from organizations we've trained
-            </p>
-          </div>
-          
-          <div className="bg-white/10 rounded-xl p-8 max-w-3xl mx-auto backdrop-blur-sm">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 rounded-full bg-secondary mx-auto mb-4 flex items-center justify-center text-xl font-bold">RH</div>
-              <h4 className="font-bold">Rolando Hintz</h4>
-              <p className="text-sm opacity-80 mb-4">District Division Orchestrator</p>
-              <div className="flex justify-center text-yellow-400 mb-4">
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-              </div>
-            </div>
-            <p className="text-center italic mb-6">
-              "Ipsum vel nobis doloremque est aut non accusantium vero molestias. Et est minima dolorem eum modi atque sint nobis. Enim quod facere. Reiciendis necessitatibus ipsam non aspernatur voluptate id."
-            </p>
-            <div className="flex justify-center space-x-2">
-              <button className="w-3 h-3 rounded-full bg-white/30"></button>
-              <button className="w-3 h-3 rounded-full bg-white"></button>
-              <button className="w-3 h-3 rounded-full bg-white/30"></button>
-              <button className="w-3 h-3 rounded-full bg-white/30"></button>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Newsletter Section */}
       <section className="py-16 bg-gray-900 text-white">
@@ -325,58 +291,7 @@ const Training = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Biruhminds Consult</h3>
-              <p className="text-gray-400">
-                Empowering organizations through research, training, and business development solutions.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white">Main</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Projects</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Certifications</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Contacts</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white">Research</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Training</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Business Development</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Policy Advocacy</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Contact Us</h4>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <i className="fas fa-map-marker-alt mr-2 text-gray-400"></i>
-                  <span className="text-gray-400">123 Business Ave, City</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-phone-alt mr-2 text-gray-400"></i>
-                  <span className="text-gray-400">+123 456 789</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-envelope mr-2 text-gray-400"></i>
-                  <span className="text-gray-400">info@biruhminds.com</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2023 Biruhminds Consult. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+
     </>
   );
 };

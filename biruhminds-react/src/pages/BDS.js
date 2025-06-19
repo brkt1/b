@@ -19,13 +19,33 @@ const HomePage = () => {
   const methodologySteps = [
     {
       step: 1,
-      title: "Business Ideation",
-      description: "We help refine your business concept through market validation and feasibility analysis to ensure viability before you invest time and resources."
+      title: "TRAININGS",
+      description: "Comprehensive business and entrepreneurial trainings tailored to your needs."
     },
     {
       step: 2,
+      title: "MARKET INFORMATION",
+      description: "Access to up-to-date market data and insights to inform your business decisions."
+    },
+    {
+      step: 3,
+      title: "ADVISORY AND COACHING",
+      description: "Personalized advisory and coaching services to help you overcome business challenges."
+    },
+    {
+      step: 4,
+      title: "COMPANY DOCUMENTS",
+      description: "Support in preparing and organizing essential company documents."
+    },
+    {
+      step: 5,
+      title: "ACCESS TO FINANCE",
+      description: "Guidance and linkage to financial resources and funding opportunities."
+    },
+    {
+      step: 6,
       title: "Business Planning",
-      description: "Our experts guide you in creating a comprehensive business plan that serves as both a roadmap for operations and a tool for securing funding."
+      description: "Expert assistance in developing robust business plans for growth and sustainability."
     }
     // Add more steps as needed
   ];
@@ -165,13 +185,8 @@ const HomePage = () => {
               </div>
             ))}
             
-            {/* CTA */}
-            <div className="text-center mt-16">
-              <Link to="/methodology" className="inline-flex items-center text-primary font-semibold text-lg hover:text-secondary">
-                Explore all 6 steps in detail
-                <i className="fas fa-arrow-right ml-3 animate-pulse-slow"></i>
-              </Link>
-            </div>
+           
+            
           </div>
         </div>
       </section>

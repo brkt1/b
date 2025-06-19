@@ -15,32 +15,32 @@ const Navigation = () => {
     { path: "/research", label: "Research" },
     { path: "/bds", label: "BDS" },
     { path: "/liyumilketa", label: "Liyu Mikleta" },
-    { path: "/projects", label: "Portfolio" }
+    { path: "/projects", label: "Portfolio" },
+    { path: "/contact", label: "Contact" }
   ];
 
   const contactInfo = [
     { 
       icon: "map-marker-alt", 
-      content: "Addis Ababa, Ethiopia", 
-      href: "https://example.com" 
-    },
+      content: "kazanchis SA Building Office # 11-03, Addis Ababa, Ethiopia", 
+      href: "https://www.google.com/maps/place/Biruhminds+Consult/@9.014938,38.768187,15z/data=!4m6!3m5!1s0x164b85d3f96aa77f:0x45b918c688a852b3!8m2!3d9.0149375!4d38.7681875!16s%2Fg%2F11t0j3lz92?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D"},
     { 
       icon: "phone", 
-      content: "+251 123 456 789", 
-      href: "tel:+123456789" 
+      content: "+251 925 546 800", 
+      href: "tel:+251 925 546 800" 
     },
     { 
       icon: "envelope", 
-      content: "Biruhminds@gmail.com", 
-      href: "mailto:biruhminds@gmail.com" 
+      content: "solgoodwill@gmail.com", 
+      href: "mailto:solgoodwill@gmail.com" 
     }
   ];
 
   const socialIcons = [
-    { icon: "facebook-f", href: "#" },
-    { icon: "twitter", href: "#" },
-    { icon: "instagram", href: "#" },
-    { icon: "linkedin-in", href: "#" }
+    { icon: "facebook-f", href: "https://www.facebook.com/biruhmindsplc" },
+    { icon: "twitter", href: "https://twitter.com/biruhmindsplc" },
+    { icon: "instagram", href: "https://www.instagram.com/biruhmindsplc" },
+    { icon: "linkedin-in", href: "https://www.linkedin.com/company/biruhmindsplc" }
   ];
 
   return (
@@ -84,7 +84,7 @@ const Navigation = () => {
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+      <header className="sticky top-0 z-50 bg-white backdrop-blur-md shadow-sm border-b border-gray-100">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-3 md:py-4">
             {/* Logo */}
@@ -117,7 +117,7 @@ const Navigation = () => {
                   <img 
                     src="/image/Liyumilketa.png" 
                     alt="Liyu Mikleta" 
-                    className="h-6 inline-block" 
+                    className="h-14 inline-block" 
                   />
                 </Link>
               </div>
@@ -160,7 +160,7 @@ const Navigation = () => {
                   <img 
                     src="/image/Liyumilketa.png" 
                     alt="Liyu Mikleta" 
-                    className="h-6 inline-block" 
+                    className="h-20 inline-block" 
                   />
                 </Link>
               </div>

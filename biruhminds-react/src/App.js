@@ -9,7 +9,8 @@ import Research from './pages/Research';
 import Training from './pages/Training';
 import Home from './pages/Home';
 import LiyuMikleta from './pages/LiyuMilketa';
-
+import Maintenance from './pages/Maintenance';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
           <Route path="/research" element={<Research />} />
           <Route path="/training" element={<Training />} />
           <Route path="/liyumilketa" element={<LiyuMikleta />} />
-          {/* Add more routes as pages are created */}
+          <Route path="*" element={<Maintenance />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />

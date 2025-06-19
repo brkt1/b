@@ -13,10 +13,10 @@ const Footer = () => {
               Biruhminds Consult PLC is a consulting firm focused on research, training, and business development services to support entrepreneurship and job creation in Ethiopia.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-400 hover:text-primary text-xl"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="text-gray-400 hover:text-primary text-xl"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="text-gray-400 hover:text-primary text-xl"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#" className="text-gray-400 hover:text-primary text-xl"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/biruhmindsplc" className="text-gray-400 hover:text-primary text-xl" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/biruhmindsplc" className="text-gray-400 hover:text-primary text-xl" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/biruhmindsplc" className="text-gray-400 hover:text-primary text-xl" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/biruhmindsplc" className="text-gray-400 hover:text-primary text-xl" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
             </div>
           </div>
 
@@ -49,7 +49,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-3 text-gray-600 text-sm">
-              <li className="flex items-start"><i className="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i><span>Addis Ababa, Ethiopia</span></li>
+              <li className="flex items-start"><i className="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i><span>kazanchis SA Building Office # 11-03<br />
+              Addis Ababa, Ethiopia</span></li>
               <li className="flex items-start"><i className="fas fa-phone mt-1 mr-3 text-primary"></i><span>+251 123 456 789</span></li>
               <li className="flex items-start"><i className="fas fa-envelope mt-1 mr-3 text-primary"></i><span>info@biruhminds.com</span></li>
               <li className="flex items-start"><i className="fas fa-clock mt-1 mr-3 text-primary"></i><span>Mon-Fri: 9:00 AM - 5:30 PM</span></li>
