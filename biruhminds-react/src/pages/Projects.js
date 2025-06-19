@@ -16,6 +16,17 @@ const Projects = () => {
     <>
       {/* Hero Video Section */}
       <section className="relative bg-dark text-white">
+        <div className="absolute inset-0 w-full h-full">
+          <img
+            src="/image/portfolio/team.png"
+            alt="Biruhminds Team"
+            className="w-full h-full object-cover object-top"
+            style={{ width: '100vw', height: '100%', minHeight: '100%', minWidth: '100vw', maxWidth: '100vw' }}
+            onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
+        </div>
         <div className="container mx-auto px-6 py-32 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Transforming Ethiopia's Economic Landscape</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
@@ -24,11 +35,6 @@ const Projects = () => {
           <a href="#portfolio" className="inline-flex items-center bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transition">
             <i className="fas fa-play-circle mr-2"></i> Watch Our Story
           </a>
-        </div>
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
         </div>
       </section>
 
@@ -46,8 +52,14 @@ const Projects = () => {
           {/* PASWAY Project */}
           <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="relative rounded-l-xl overflow-hidden">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+              <div className="relative rounded-l-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/geez.png"
+                  alt="PASWAY Project"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
               </div>
               <div className="p-8">
                 <div className="text-sm text-primary font-medium mb-2">PASWAY Project</div>
@@ -105,8 +117,14 @@ const Projects = () => {
           {/* Young Africa Works Programme */}
           <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="lg:order-2 relative rounded-r-xl overflow-hidden">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+              <div className="lg:order-2 relative rounded-r-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/"
+                  alt="Young Africa Works Programme"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
               </div>
               <div className="p-8 lg:order-1">
                 <div className="text-sm text-primary font-medium mb-2">Young Africa Works</div>
@@ -173,8 +191,14 @@ const Projects = () => {
           {/* Post-War Rehabilitation */}
           <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="relative rounded-l-xl overflow-hidden">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+              <div className="relative rounded-l-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/eed.png"
+                  alt="Post-War MSME Rehabilitation"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
               </div>
               <div className="p-8">
                 <div className="text-sm text-primary font-medium mb-2">Conflict Recovery</div>
@@ -231,8 +255,14 @@ const Projects = () => {
           {/* Capacity Building */}
           <div className="project-section bg-white rounded-xl shadow-lg gradient-border">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="lg:order-2 relative rounded-r-xl overflow-hidden">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+              <div className="lg:order-2 relative rounded-r-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/wash.png"
+                  alt="Addis Ababa Job Creation Bureau"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
               </div>
               <div className="p-8 lg:order-1">
                 <div className="text-sm text-primary font-medium mb-2">Public Sector Training</div>
@@ -281,18 +311,139 @@ const Projects = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Projects Approach Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Our Approach</span>
-              <h2 className="text-4xl font-bold text-dark mb-4">Comprehensive Business Development Services</h2>
+          {/* RHRN Programme on Adolescent and Youth SRHR */}
+          <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="relative rounded-l-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/rhrn.png"
+                  alt="RHRN Programme on Adolescent and Youth SRHR"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
+              </div>
+              <div className="p-8">
+                <div className="text-sm text-primary font-medium mb-2">RHRN Programme</div>
+                <h3 className="text-2xl font-bold text-dark mb-4">Adolescent and Youth SRHR (DEC, TaYA, ODWACE and FGEA Consortium)</h3>
+                <p className="text-gray-600 mb-6">
+                  Recognizing the fundamental right of individuals, particularly adolescents and youth, to access accurate information, essential skills, and support for their sexual and reproductive well-being, we address SRH issues. Biruhminds Consult is driven by a deep commitment to creating a healthy and informed community.
+                </p>
+                <button
+                  className={`read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4 ${expandedSections['rhrn-more'] ? 'expanded' : ''}`}
+                  onClick={() => toggleExpand('rhrn-more')}
+                >
+                  {expandedSections['rhrn-more'] ? 'Read Less' : 'Read More'}
+                </button>
+                {expandedSections['rhrn-more'] && (
+                  <div className="mt-4">
+                    <p className="text-gray-600 mb-4">
+                      We actively engage in programs like the "Training on Adolescent and Youth Sexual Reproductive Health (SRHR)" in collaboration with partners such as DANIDA Programme and the Ethiopian Center for Development (ECD). We aim to contribute to the holistic development of communities, ensuring that individuals are equipped with the knowledge and skills necessary to make informed choices about their sexual and reproductive lives. By addressing SRH issues, we contribute to building a culture of inclusivity where everyone, regardless of background, has the opportunity to lead a healthy and fulfilling life.
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
+
+          {/* Policy Advocacy to enhance the Entrepreneurial Ecosystem in Ethiopia */}
+          <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="lg:order-2 relative rounded-r-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/"
+                  alt="Policy Advocacy for Entrepreneurial Ecosystem"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
+              </div>
+              <div className="p-8 lg:order-1">
+                <div className="text-sm text-primary font-medium mb-2">Policy Advocacy</div>
+                <h3 className="text-2xl font-bold text-dark mb-4">Enhancing the Entrepreneurial Ecosystem in Ethiopia</h3>
+                <p className="text-gray-600 mb-6">
+                  At Biruhminds Consult, we are dedicated to fostering economic resilience and growth, particularly through our focus on Small and Medium Enterprises (SMEs). We also recognize the multifaceted challenges, from limited access to finance to navigating regulatory complexities and responding to dynamic market demands.
+                </p>
+                <button
+                  className={`read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4 ${expandedSections['policy-more'] ? 'expanded' : ''}`}
+                  onClick={() => toggleExpand('policy-more')}
+                >
+                  {expandedSections['policy-more'] ? 'Read Less' : 'Read More'}
+                </button>
+                {expandedSections['policy-more'] && (
+                  <div className="mt-4">
+                    <p className="text-gray-600 mb-4">
+                      One of our flagship initiatives, "Liyu Milketa," serves as a platform to strengthen SMEs by enhancing access to finance and facilitating high-quality Business Development Services (BDS). This program advocates for policy changes, addresses institutional challenges, and fosters partnerships among key stakeholders. Our engagement in SME development goes beyond conventional approaches. We believe in empowering individuals, fostering strategic thinking, and creating an environment where SMEs can thrive, even in challenging circumstances.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* The IBADS4MSEs and MENSH */}
+          <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="relative rounded-l-xl overflow-hidden flex items-center justify-center min-h-[400px] bg-gray-100">
+                <img
+                  src="/image/portfolio/mensh.png"
+                  alt="IBADS4MSEs and MENSH"
+                  className="w-full h-full object-cover rounded-xl border-2 border-dashed"
+                  style={{ minHeight: '400px', maxHeight: '400px' }}
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
+              </div>
+              <div className="p-8">
+                <div className="text-sm text-primary font-medium mb-2">IBADS4MSEs and MENSH</div>
+                <h3 className="text-2xl font-bold text-dark mb-4">Improved Business Advisory and Development Service for MSEs (LI WAY Programme)</h3>
+                <p className="text-gray-600 mb-6">
+                  Duration: 2 years (Pilot phase until June, 2025)<br />
+                  Target group: 230 MSEs and Start-ups based in Addis Ababa, largely women owned/led and 75% youth
+                </p>
+                <button
+                  className={`read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4 ${expandedSections['ibads-more'] ? 'expanded' : ''}`}
+                  onClick={() => toggleExpand('ibads-more')}
+                >
+                  {expandedSections['ibads-more'] ? 'Read Less' : 'Read More'}
+                </button>
+                {expandedSections['ibads-more'] && (
+                  <div className="mt-4">
+                    <p className="text-gray-600 mb-4">
+                      Since October 2023, Biruhminds started implementing improved BDS programme using a special cost sharing modality based on the public-private and private-private partnership frameworks. The intermediate outcomes are highly encouraging to enhance the newly introduced market system development approach for improved and affordable business advisory service for MSEs. The project targeted low income women owned/led micro and small enterprises based in Addis Ababa. The objective of the project was to enhance the quality of BDS and address affordability and inclusiveness challenges for women based and youth led small business enterprises. Accordingly, a unique public-private and private-private partnership business models were introduced with a market system development approach to ensure sustainability.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* End note for research and evaluations */}
+          <div className="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+            <div className="p-8">
+              <div className="text-sm text-primary font-medium mb-2">Research & Evaluation</div>
+              <h3 className="text-2xl font-bold text-dark mb-4">End Note for Research and Evaluations</h3>
+              <p className="text-gray-600 mb-4">
+                The engagement in various evaluation programs demonstrates our dedication to ensuring the highest standards in research practices. Here research meets purpose, delivering evidence-driven solutions for societal progress and organizational excellence.
+              </p>
+              <p className="text-gray-600">
+                Adherence to national laws, international declarations, and the National Research Ethics Review guideline ensures that research at Biruhminds is conducted with the highest ethical standards, particularly in studies involving human subjects or participants.
+              </p>
+            </div>
+          </div>
+
+          {/* Projects Approach Section */}
+          <section className="py-20 bg-gray-50">
+            <div className="container mx-auto px-6">
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-12">
+                  <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Our Approach</span>
+                  <h2 className="text-4xl font-bold text-dark mb-4">Comprehensive Business Development Services</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </div>
       </section>
 

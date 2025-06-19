@@ -221,9 +221,12 @@ const Home = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 flex items-center justify-center text-gray-500">
-                  <i className="fas fa-globe-africa text-7xl opacity-30"></i>
-                </div>
+                <img
+                  src="/image/portfolio/team.png"
+                  alt="Our Purpose"
+                  className=" object-cover object-center"
+                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                />
               </div>
             </div>
             <div className="w-full md:w-1/2">
@@ -573,7 +576,7 @@ const Home = () => {
             <div className="group relative h-full bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 p-8 h-full flex flex-col">
-                <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-3xl mb-6 transition-all duration-300 group-hover:bg-accent group-hover:text-white">
+                <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-3xl mb-6 transition-all duration-300 group-hover:bg-accent group_hover:text-white">
                   <i className="fas fa-balance-scale"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Ethical Standards</h3>
