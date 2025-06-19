@@ -207,7 +207,6 @@ const Research = () => {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 };
