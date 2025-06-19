@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - Biruhminds Consult PLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Poppins', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: '#10adbb',
+                        secondary: '#207f8a',
+                        dark: '#1A2E35',
+                        light: '#F8FCFD',
+                        accent: '#FF7E33',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .read-more-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s ease-out;
+        }
+        .read-more-content.expanded {
+            max-height: 2000px;
+            transition: max-height 0.9s ease-in;
+        }
+        .read-more-btn::after {
+            content: '▼';
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+        .read-more-btn.expanded::after {
+            transform: rotate(180deg);
+        }
+        .project-section {
+            transition: all 0.3s ease;
+        }
+        .project-section:hover {
+            transform: translateY(-5px);
+        }
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #10adbb, #207f8a);
+            border-radius: 4px 4px 0 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">BM</div>
+                    <span class="text-xl font-bold text-dark">Biruhminds</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="#" class="text-primary font-medium">Our Work</a>
+                    <a href="#" class="text-gray-600 hover:text-primary transition">Services</a>
+                    <a href="#" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="#" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Video Section -->
+    <section class="relative bg-dark text-white">
+        <div class="container mx-auto px-6 py-32 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforming Ethiopia's Economic Landscape</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
+                Job creation and MSME development through innovative programming
+            </p>
+            <a href="#portfolio" class="inline-flex items-center bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transition">
+                <i class="fas fa-play-circle mr-2"></i> Watch Our Story
+            </a>
+        </div>
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 bg-white" id="portfolio">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Portfolio</span>
+                <h2 class="text-4xl font-bold text-dark mb-4">Our Service Portfolio & Partners</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Collaborative programs driving job creation and MSME development in Ethiopia
+                </p>
+            </div>
+
+            <!-- PASWAY Project -->
+            <div class="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="relative rounded-l-xl overflow-hidden">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+                    </div>
+                    <div class="p-8">
+                        <div class="text-sm text-primary font-medium mb-2">PASWAY Project</div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">GIZ/Plan International (SCV and ECD Consortium Programme)</h3>
+                        <p class="text-gray-600 mb-6">
+                            Youth BDS at ECD and youth centers in Adama, training young entrepreneurs for sustainable enterprise creation.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                                <i class="fas fa-users mr-2"></i> 1,200+ Youth Trained
+                            </div>
+                            <div class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                                <i class="fas fa-map-marker-alt mr-2"></i> Adama Region
+                            </div>
+                        </div>
+                        
+                        <!-- Read More Content -->
+                        <div id="pasway-more" class="read-more-content">
+                            <h4 class="font-semibold text-lg mb-3">Project Details</h4>
+                            <p class="text-gray-600 mb-4">
+                                Our partnership with GIZ and Plan International delivered comprehensive business development services through youth centers in Adama. The program focused on equipping young entrepreneurs with essential skills for sustainable enterprise creation.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                    <span>Comprehensive entrepreneurship training programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                    <span>Mentorship and coaching for business startups</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                    <span>Market linkage and access to finance support</span>
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Youth Development</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Entrepreneurship</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Adama Region</span>
+                            </div>
+                        </div>
+                        
+                        <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4" data-target="pasway-more">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Young Africa Works Programme -->
+            <div class="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="lg:order-2 relative rounded-r-xl overflow-hidden">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+                    </div>
+                    <div class="p-8 lg:order-1">
+                        <div class="text-sm text-primary font-medium mb-2">Young Africa Works</div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Mastercard Foundation/First Consult (BRIDGE Programme)</h3>
+                        <p class="text-gray-600 mb-6">
+                            High quality capacity enhancement training and business advisory services delivered for micro, small and medium enterprises across multiple regions in Ethiopia.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg mb-3">Geographic Reach:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Tigray</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Dire Dawa</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Dessie</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Kemise</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Bahir Dar</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Adama</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Addis Ababa</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Read More Content -->
+                        <div id="yaw-more" class="read-more-content">
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                                    <div class="text-2xl font-bold text-primary mb-1">26,550</div>
+                                    <div class="text-sm text-gray-600">Participants Completed</div>
+                                </div>
+                                <div class="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                                    <div class="text-2xl font-bold text-primary mb-1">1,200</div>
+                                    <div class="text-sm text-gray-600">New MSMEs Established</div>
+                                </div>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-3">Program Impact</h4>
+                            <p class="text-gray-600 mb-4">
+                                The BRIDGE Programme has successfully transformed the entrepreneurial landscape across Ethiopia, creating sustainable businesses and employment opportunities in regions most in need of economic development.
+                            </p>
+                            <ul class="space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                    <span>92% of participants reported increased business skills</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                    <span>75% of new businesses still operational after 2 years</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                    <span>Average revenue increase of 45% among participants</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4" data-target="yaw-more">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post-War Rehabilitation -->
+            <div class="project-section bg-white rounded-xl shadow-lg gradient-border mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="relative rounded-l-xl overflow-hidden">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+                    </div>
+                    <div class="p-8">
+                        <div class="text-sm text-primary font-medium mb-2">Conflict Recovery</div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Post-War MSME Rehabilitation</h3>
+                        <p class="text-gray-600 mb-6">
+                            More than 1,200 enterprise owners from 230 MSEs and regional trade experts were trained on Enterprise Leadership and Entrepreneurial Mindset to revitalize conflict-affected MSMEs in Tigray and Amhara regions.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg mb-3">Program Impact:</h4>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                                    <span>Positive mindset shift among participants</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                                    <span>Increased readiness to commit to enterprise revival</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Read More Content -->
+                        <div id="rehab-more" class="read-more-content">
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                                    <div class="text-2xl font-bold text-primary mb-1">98%</div>
+                                    <div class="text-sm text-gray-600">Satisfaction Rate</div>
+                                </div>
+                                <div class="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                                    <div class="text-2xl font-bold text-primary mb-1">85%</div>
+                                    <div class="text-sm text-gray-600">Businesses Revived</div>
+                                </div>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-3">Revitalization Strategy</h4>
+                            <p class="text-gray-600 mb-4">
+                                Our comprehensive approach to post-conflict business rehabilitation included psychological support, financial restructuring, and market reconnection strategies tailored to the unique challenges faced by businesses in conflict-affected regions.
+                            </p>
+                            <p class="text-gray-600">
+                                Participants praised the content and methodologies (98%) and expressed attitudinal changes, inspiration, and a strong commitment to revitalizing enterprises in the Tigray region.
+                            </p>
+                        </div>
+                        
+                        <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4" data-target="rehab-more">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capacity Building -->
+            <div class="project-section bg-white rounded-xl shadow-lg gradient-border">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="lg:order-2 relative rounded-r-xl overflow-hidden">
+                        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+                    </div>
+                    <div class="p-8 lg:order-1">
+                        <div class="text-sm text-primary font-medium mb-2">Public Sector Training</div>
+                        <h3 class="text-2xl font-bold text-dark mb-4">Addis Ababa Job Creation Bureau</h3>
+                        <p class="text-gray-600 mb-6">
+                            11 sub-city sector heads and 155 high-level experts were trained on Transformational Enterprise Leadership and Entrepreneurial Mindset in Adama and Debrezeit cities.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg mb-3">Key Achievements:</h4>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                                    <span>Customized training modules developed</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                                    <span>Improved business advisory services</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Read More Content -->
+                        <div id="capacity-more" class="read-more-content">
+                            <p class="text-gray-600 mb-6">
+                                The workshop held in Adama and Debreziet cities was instrumental in achieving the government job creation and enterprise transition goals. Biruhminds developed customized training modules and toolkits to empower lower level public experts for improved business advisory and coaching service for MSMEs.
+                            </p>
+                            <h4 class="font-semibold text-lg mb-3">Training Outcomes</h4>
+                            <p class="text-gray-600 mb-4">
+                                Participants gained practical skills in enterprise leadership, strategic planning, and effective governance models that directly contribute to job creation and economic development objectives.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Public Sector</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Leadership</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Addis Ababa</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Capacity Building</span>
+                            </div>
+                        </div>
+                        
+                        <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4" data-target="capacity-more">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BDS Approach Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Our Approach</span>
+                    <h2 class="text-4xl font-bold text-dark mb-4">Comprehensive Business Development Services</h2>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 mb-12">
+                    <p class="text-gray-600 mb-6">
+                        The aim of our BDS support, coaching and training is to enhance entrepreneurial competencies of business owners, start-ups, and SMEs to enhance employment opportunities. Our BDS package comprises of six components starting from business idea generation and business plan development to access to finance linkage.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Through our digitalized BDS provision, we avail affordable, tailored, and end-to-end business advisory support to young entrepreneurs. Child Safeguards Policy and BDS Guidelines are strictly applicable in our BDS programming.
+                    </p>
+                    
+                    <!-- Read More Content -->
+                    <div id="bds-more" class="read-more-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div class="bg-primary/5 p-6 rounded-lg border border-primary/10">
+                                <h3 class="text-xl font-semibold mb-3 text-primary">IBADS4MSEs Programme</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Improved Business Advisory and Development Service for MSEs (LI WAY Programme)
+                                </p>
+                                <div class="text-sm text-gray-500">
+                                    <div class="mb-2"><span class="font-medium">Duration:</span> 2 years (Pilot phase until June 2025)</div>
+                                    <div><span class="font-medium">Target:</span> 230 women-owned/led MSEs and startups in Addis Ababa (75% youth)</div>
+                                </div>
+                            </div>
+                            <div class="bg-primary/5 p-6 rounded-lg border border-primary/10">
+                                <h3 class="text-xl font-semibold mb-3 text-primary">MENSH Digital Platform</h3>
+                                <p class="text-gray-600">
+                                    Our innovative digital BDS platform provides accessible business advisory services through public-private partnerships and market system development approaches.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4" data-target="bds-more">
+                        Read More About Our BDS Services
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Conflict Response in Tigray Region</h3>
+                    <p class="text-gray-600 mb-6">
+                        In response to the conflict in northern Ethiopia, our partnership with Ethiopian Enterprise Development (EED) and the Ministry of Industry focuses on revitalizing industries and SMEs in Tigray. Our recent two-day training for Tigray Regional State Bureau of Industry officials emphasized key areas like initiative-taking, empathy, and strategic thinking.
+                    </p>
+                    
+                    <!-- Read More Content -->
+                    <div id="tigray-more" class="read-more-content">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            <div class="bg-primary/5 p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">114</div>
+                                <div class="text-gray-600">Participants Engaged</div>
+                            </div>
+                            <div class="bg-primary/5 p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">58</div>
+                                <div class="text-gray-600">Female Participants</div>
+                            </div>
+                            <div class="bg-primary/5 p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">98%</div>
+                                <div class="text-gray-600">Satisfaction Rate</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Engaging 114 participants, including 58 females, the training resulted in a positive mindset shift and increased readiness to commit to enterprise revival. Participants praised the content and methodologies (98%) and expressed attitudinal changes, inspiration, and a strong commitment to revitalizing enterprises in the Tigray region.
+                        </p>
+                    </div>
+                    
+                    <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary" data-target="tigray-more">
+                        Read More About Our Tigray Initiative
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Evaluation Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Research</span>
+                <h2 class="text-4xl font-bold text-dark mb-4">Research & Evaluations</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Evidence-based solutions for WASH, SRHR, Gender, and Climate Change
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- WASH Project -->
+                <div class="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                    <div class="h-3 bg-gradient-to-r from-primary to-accent"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mr-4">
+                                <i class="fas fa-tint text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">WASH SDGs Programme</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">Amref Health Africa and Plan International Consortium (MDF and Biruhminds)</p>
+                        
+                        <!-- Read More Content -->
+                        <div id="wash-more" class="read-more-content">
+                            <p class="text-gray-600 mb-4">
+                                Our WASH project evaluation partnership focused on developing and improving water supply systems, sanitation facilities, and promoting hygiene education. These initiatives were strategically designed to meet the specific needs of diverse communities, with a strong emphasis on community involvement and empowerment.
+                            </p>
+                            <p class="text-gray-600">
+                                Engaging with the WASH Alliance International (WAI), we contribute to the WASH SDG Consortium's efforts, working alongside Dutch partners like Simavi, Amref, and others to implement the WASH SDG Programme, addressing water-related challenges in Ethiopia and beyond.
+                            </p>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Water, Sanitation & Hygiene</span>
+                            <button class="read-more-btn text-primary font-medium hover:text-secondary flex items-center transition" data-target="wash-more">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SRHR Programme -->
+                <div class="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                    <div class="h-3 bg-gradient-to-r from-accent to-secondary"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-accent/10 text-accent flex items-center justify-center mr-4">
+                                <i class="fas fa-heart text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">RHRN Programme</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">Adolescent and Youth SRHR (DEC, TaYA, ODWACE and FGEA Consortium)</p>
+                        
+                        <!-- Read More Content -->
+                        <div id="srhr-more" class="read-more-content">
+                            <p class="text-gray-600 mb-4">
+                                Recognizing the fundamental right of individuals, particularly adolescents and youth, to access accurate information, essential skills, and support for their sexual and reproductive well-being, we address SRH issues Biruhminds Consult is driven by a deep commitment to creating a healthy and informed community.
+                            </p>
+                            <p class="text-gray-600">
+                                We actively engage in programs like the "Training on Adolescent and Youth Sexual Reproductive Health (SRHR)" in collaboration with partners such as DANIDA Programme and the Ethiopian Center for Development (ECD). We aim to contribute to the holistic development of communities, ensuring that individuals are equipped with the knowledge and skills necessary to make informed choices about their sexual and reproductive lives.
+                            </p>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Sexual & Reproductive Health</span>
+                            <button class="read-more-btn text-primary font-medium hover:text-secondary flex items-center transition" data-target="srhr-more">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Climate Change -->
+                <div class="group relative bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                    <div class="h-3 bg-gradient-to-r from-secondary to-primary"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mr-4">
+                                <i class="fas fa-leaf text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-dark">Climate Change Research</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">WASH4IWRM Midterm Evaluation (VEI and Public Partnership)</p>
+                        
+                        <!-- Read More Content -->
+                        <div id="climate-more" class="read-more-content">
+                            <p class="text-gray-600 mb-4">
+                                Our research on climate change focuses on sustainable water resource management and adaptation strategies for vulnerable communities in Ethiopia. The WASH4IWRM Midterm Evaluation assessed the effectiveness of integrated water resource management approaches in building climate resilience.
+                            </p>
+                            <p class="text-gray-600">
+                                The engagement in various evaluation programs demonstrates our dedication to ensuring the highest standards in research practices. Here research meets purpose, delivering evidence-driven solutions for societal progress and organizational excellence.
+                            </p>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Environmental Sustainability</span>
+                            <button class="read-more-btn text-primary font-medium hover:text-secondary flex items-center transition" data-target="climate-more">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-xl p-8 mt-12 border border-gray-200">
+                <h3 class="text-2xl font-bold text-dark mb-4">Our Research Ethos</h3>
+                <p class="text-gray-600 mb-6">
+                    For Biruhminds, research and evaluation services stand as major offerings, with a strong commitment to conducting research for social impact while upholding ethical procedures. Our engagement in various evaluation programs demonstrates our dedication to ensuring the highest standards in research practices.
+                </p>
+                <p class="text-gray-600">
+                    Adherence to national laws, international declarations, and the National Research Ethics Review guideline ensures that research at Biruhminds is conducted with the highest ethical standards, particularly in studies involving human subjects or participants.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Advocacy Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Advocacy</span>
+                    <h2 class="text-4xl font-bold text-dark mb-4">Enhancing Ethiopia's Entrepreneurial Ecosystem</h2>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Policy Advocacy & Stakeholder Engagement</h3>
+                    <p class="text-gray-600 mb-6">
+                        At Biruhminds Consult, we are dedicated to fostering economic resilience and growth, particularly through our focus on Small and Medium Enterprises (SMEs). We recognize the multifaceted challenges, from limited access to finance to navigating regulatory complexities and responding to dynamic market demands.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our flagship "Liyu Milketa" initiative serves as a platform to strengthen SMEs by enhancing access to finance and facilitating high-quality Business Development Services (BDS). This program advocates for policy changes, addresses institutional challenges, and fosters partnerships among key stakeholders.
+                    </p>
+                    
+                    <!-- Read More Content -->
+                    <div id="policy-more" class="read-more-content">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div class="bg-primary/5 p-6 rounded-lg border border-primary/10">
+                                <h4 class="font-semibold text-lg mb-3 text-primary">Legal & Policy Challenges</h4>
+                                <p class="text-gray-600">
+                                    Addressing regulatory barriers affecting Ethiopian entrepreneurs and advocating for SME-friendly policies to create a more conducive business environment.
+                                </p>
+                            </div>
+                            <div class="bg-primary/5 p-6 rounded-lg border border-primary/10">
+                                <h4 class="font-semibold text-lg mb-3 text-primary">Stakeholder Partnerships</h4>
+                                <p class="text-gray-600">
+                                    Building alliances for improved enterprise development and decent job creation across public, private, and civil society sectors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="read-more-btn inline-flex items-center text-primary font-medium hover:text-secondary mt-4" data-target="policy-more">
+                        Read More About Our Policy Work
+                    </button>
+                </div>
+                
+                <div class="bg-primary/5 rounded-xl p-8 border border-primary/10">
+                    <h3 class="text-2xl font-bold text-dark mb-4">Ethiopia's SME Landscape</h3>
+                    <p class="text-gray-600 mb-6">
+                        In the diverse fabric of Ethiopia's economic landscape, the intricate threads of Small and Medium Enterprises (SMEs) weave a narrative of resilience, innovation, and untapped potential. The country's entrepreneurial spirit is embodied by the countless individuals who embark on the journey of creating and sustaining SMEs.
+                    </p>
+                    <p class="text-gray-600">
+                        These enterprises, ranging from startups to established businesses, play a pivotal role in driving economic vibrancy and fostering local empowerment. Our engagement in SME development goes beyond conventional approaches - we believe in empowering individuals, fostering strategic thinking, and creating an environment where SMEs can thrive, even in challenging circumstances.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full mb-4">Collaboration</span>
+                <h2 class="text-4xl font-bold text-dark mb-4">Our Trusted Partners</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Working together to create meaningful impact across Ethiopia
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-32">
+                    <div class="text-xl font-bold text-gray-600">GIZ</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-32">
+                    <div class="text-xl font-bold text-gray-600">Plan Intl</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-32">
+                    <div class="text-xl font-bold text-gray-600">Mastercard</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-32">
+                    <div class="text-xl font-bold text-gray-600">Ministry</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-32">
+                    <div class="text-xl font-bold text-gray-600">Amref</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-32">
+                    <div class="text-xl font-bold text-gray-600">WASH</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Collaborate?</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8">
+                Whether you're interested in our programs, research, or policy advocacy work, we'd love to hear from you.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl">
+                    Contact Our Team
+                </a>
+                <a href="#" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+                    <i class="fas fa-download mr-2"></i> Download Our Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">BM</div>
+                        <span class="text-xl font-bold text-white">Biruhminds</span>
+                    </div>
+                    <p class="mb-6">
+                        Empowering businesses and communities through innovative development solutions in Ethiopia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Our Work</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-primary transition">MSME Development</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Job Creation</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Policy Advocacy</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Research & Evaluation</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Capacity Building</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-primary transition">Publications</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Training Materials</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Policy Briefs</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mr-3 mt-1"></i>
+                            <span>Bole Road, Addis Ababa, Ethiopia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-primary mr-3 mt-1"></i>
+                            <span>+251 911 234 567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-primary mr-3 mt-1"></i>
+                            <span>info@biruhminds.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-sm">
+                <p>&copy; 2023 Biruhminds Consult PLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Read More buttons functionality
+            const readMoreButtons = document.querySelectorAll('.read-more-btn');
+            
+            readMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const contentSection = document.getElementById(targetId);
+                    
+                    // Toggle the expanded class on the content section
+                    contentSection.classList.toggle('expanded');
+                    
+                    // Toggle the expanded class on the button
+                    this.classList.toggle('expanded');
+                    
+                    // Update button text
+                    if (this.classList.contains('expanded')) {
+                        this.innerHTML = 'Read Less';
+                    } else {
+                        this.innerHTML = 'Read More';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

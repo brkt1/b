@@ -26,125 +26,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="antialiased font-inter bg-white text-gray-900">
-  <!-- Modern Top Bar -->
-<div class="bg-gradient-to-r from-primary to-secondary py-3">
-  <div class="container mx-auto px-6">
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-      <!-- Contact Info -->
-      <div class="contact-info flex flex-wrap items-center gap-6 text-sm">
-        <a href="https://example.com" target="_blank" class="flex items-center text-white/90 hover:text-white transition group">
-          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center mr-2 group-hover:bg-white/20 transition">
-            <i class="fas fa-map-marker-alt text-sm"></i>
-          </div>
-          <span>Addis Ababa, Ethiopia</span>
-        </a>
-        <a href="tel:+123456789" class="flex items-center text-white/90 hover:text-white transition group">
-          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center mr-2 group-hover:bg-white/20 transition">
-            <i class="fas fa-phone text-sm"></i>
-          </div>
-          <span>+251 123 456 789</span>
-        </a>
-        <a href="mailto:biruhminds@gmail.com" class="flex items-center text-white/90 hover:text-white transition group">
-          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center mr-2 group-hover:bg-white/20 transition">
-            <i class="fas fa-envelope text-sm"></i>
-          </div>
-          <span>Biruhminds@gmail.com</span>
-        </a>
-      </div>
-      
-      <!-- Social Icons -->
-      <div class="social-icons flex space-x-3">
-        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition transform hover:-translate-y-0.5">
-          <i class="fab fa-facebook-f text-sm"></i>
-        </a>
-        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition transform hover:-translate-y-0.5">
-          <i class="fab fa-twitter text-sm"></i>
-        </a>
-        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition transform hover:-translate-y-0.5">
-          <i class="fab fa-instagram text-sm"></i>
-        </a>
-        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition transform hover:-translate-y-0.5">
-          <i class="fab fa-linkedin-in text-sm"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modern Header -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
-  <div class="container mx-auto px-6">
-    <div class="flex justify-between items-center py-4">
-      <!-- Logo -->
-      <div class="flex items-center">
-        <a href="/" class="flex items-center group">
-          <img width="120px" src="image/Biruhminds_logo.png" alt="Biruhminds Consult" class="h-auto">
-        </a>
-      </div>
-      
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex space-x-1">
-        <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary font-medium transition duration-200 relative group">
-          <span>Home</span>
-          <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
-        </a>
-        <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary font-medium transition duration-200 relative group">
-          <span>About</span>
-          <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
-        </a>
-        <a href="./Services.html" class="px-4 py-2 text-gray-700 hover:text-primary font-medium transition duration-200 relative group">
-          <span>Services</span>
-          <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
-        </a>
-        <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary font-medium transition duration-200 relative group">
-          <span>Projects</span>
-          <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
-        </a>
-        <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary font-medium transition duration-200 relative group">
-          <span>Blog</span>
-          <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
-        </a>
-        <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary font-medium transition duration-200 relative group">
-          <span>Contact</span>
-          <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4 group-hover:left-1/4"></span>
-        </a>
-      </nav>
-      
-      <!-- CTA Button (Desktop) -->
-      <div class="hidden md:block">
-        <a href="#" class="px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-lg hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
-          Get Consultation
-        </a>
-      </div>
-      
-      <!-- Mobile Menu Toggle -->
-      <button class="md:hidden text-gray-700 focus:outline-none" id="menu-toggle">
-        <div class="w-8 h-8 flex flex-col justify-center items-center gap-1.5">
-          <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300" id="bar1"></span>
-          <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300" id="bar2"></span>
-          <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300" id="bar3"></span>
-        </div>
-      </button>
-    </div>
+  
+<script>
+  // Mobile menu toggle functionality
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
     
-    <!-- Mobile Menu -->
-    <div class="mobile-menu md:hidden overflow-hidden transition-all duration-400 max-h-0 bg-white" id="mobile-menu">
-      <div class="flex flex-col space-y-1 py-4">
-        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium">Home</a>
-        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium">About</a>
-        <a href="./Services.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium">Services</a>
-        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium">Projects</a>
-        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium">Blog</a>
-        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg font-medium">Contact</a>
-        <div class="mt-2 pt-3 border-t border-gray-100">
-          <a href="#" class="block w-full text-center px-4 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-lg hover:shadow-md transition">
-            Get Consultation
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+    if (menu.classList.contains('max-h-0')) {
+      menu.classList.remove('max-h-0');
+      menu.classList.add('max-h-screen', 'py-4');
+      bar1.classList.add('rotate-45', 'translate-y-2');
+      bar2.classList.add('opacity-0');
+      bar3.classList.add('-rotate-45', '-translate-y-2');
+    } else {
+      menu.classList.add('max-h-0');
+      menu.classList.remove('max-h-screen', 'py-4');
+      bar1.classList.remove('rotate-45', 'translate-y-2');
+      bar2.classList.remove('opacity-0');
+      bar3.classList.remove('-rotate-45', '-translate-y-2');
+    }
+  });
+
+  // Mobile submenu toggle functionality
+  const mobileServicesBtn = document.getElementById('mobile-services-btn');
+  const mobileServicesMenu = document.getElementById('mobile-services-menu');
+  mobileServicesBtn.addEventListener('click', () => {
+    mobileServicesMenu.classList.toggle('hidden');
+  });
+
+  const mobileResearchBtn = document.getElementById('mobile-research-btn');
+  const mobileResearchMenu = document.getElementById('mobile-research-menu');
+  mobileResearchBtn.addEventListener('click', () => {
+    mobileResearchMenu.classList.toggle('hidden');
+  });
+
+  const mobileBdsBtn = document.getElementById('mobile-bds-btn');
+  const mobileBdsMenu = document.getElementById('mobile-bds-menu');
+  mobileBdsBtn.addEventListener('click', () => {
+    mobileBdsMenu.classList.toggle('hidden');
+  });
+
+  const mobileLiyuBtn = document.getElementById('mobile-liyu-btn');
+  const mobileLiyuMenu = document.getElementById('mobile-liyu-menu');
+  mobileLiyuBtn.addEventListener('click', () => {
+    mobileLiyuMenu.classList.toggle('hidden');
+  });
+</script>
 
 <script>
   // Mobile menu toggle functionality
@@ -626,83 +556,7 @@
     </div>
   </div>
 </section>
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h2 class="text-2xl font-bold mb-6">
-                        <span class="text-primary">Biruh</span>minds
-                    </h2>
-                    <p class="text-gray-400 mb-6">
-                        Delivering innovative business solutions and fostering sustainable growth in Ethiopia and beyond.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-primary text-xl">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-primary text-xl">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-primary text-xl">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-primary text-xl">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Services</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Business Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Training Programs</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Research & Insights</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Liyu Mikleta</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Consulting</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Company</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-primary">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Our Team</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Projects</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
-                            <span>Addis Ababa, Ethiopia</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone mt-1 mr-3 text-primary"></i>
-                            <span>+251 123 456 789</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
-                            <span>info@biruhminds.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-clock mt-1 mr-3 text-primary"></i>
-                            <span>Mon-Fri: 9:00 AM - 5:30 PM</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-                <p>© 2023 Biruhminds Consult PLC. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+   
 
     <script>
         // Mobile menu toggle
