@@ -242,9 +242,9 @@ const Research = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
             <div className="p-6">
-              <div className="text-4xl font-bold text-primary-500 mb-3">150+</div>
+              <div className="text-4xl font-bold text-primary-500 mb-3">15+</div>
               <div className="text-gray-600 uppercase text-sm tracking-wider">Research Projects</div>
             </div>
             <div className="p-6">
@@ -255,10 +255,7 @@ const Research = () => {
               <div className="text-4xl font-bold text-primary-500 mb-3">25+</div>
               <div className="text-gray-600 uppercase text-sm tracking-wider">Industry Sectors</div>
             </div>
-            <div className="p-6">
-              <div className="text-4xl font-bold text-primary-500 mb-3">10M+</div>
-              <div className="text-gray-600 uppercase text-sm tracking-wider">Data Points Analyzed</div>
-            </div>
+           
           </div>
         </div>
       </section>

@@ -27,7 +27,7 @@ const Training = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+              <img src="/image/portfolio/rhrn.png" 
                    alt="Training session" 
                    className="rounded-xl shadow-lg w-full" />
             </div>
@@ -40,13 +40,8 @@ const Training = () => {
                 Biruhminds also develops tailored training manuals on different thematic areas and comprehensive soft skills as deemed necessary for development partners and the private sector.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="bg-primary text-white px-6 py-2 rounded-lg font-medium">
-                  Read More
-                </a>
-                <a href="#" className="border border-primary text-primary px-6 py-2 rounded-lg font-medium flex items-center">
-                  <span>Download Brochure</span>
-                  <i className="fas fa-download ml-2"></i>
-                </a>
+                
+             
               </div>
             </div>
           </div>
@@ -64,20 +59,22 @@ const Training = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Program 1 */}
+
+             {/* Program 4 */}
             <div className="training-card p-8 rounded-xl shadow-md">
               <div className="feature-icon rounded-full flex items-center justify-center mb-6 text-primary">
-                <i className="fas fa-briefcase text-2xl"></i>
+                <i className="fas fa-calendar-check text-2xl"></i>
               </div>
-              <h3 className="text-xl font-bold mb-4">Business Skills Training</h3>
+              <h3 className="text-xl font-bold mb-4">Delivering Trainings</h3>
               <p className="text-gray-600 mb-4">
-                Entrepreneurship, marketing, finance & leadership development programs
+                End-to-end management of venues, materials & certification
               </p>
-              <a href="#" className="text-primary font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Learn More</span>
+              <a href="https://biruhminds.com/contact" className="text-primary font-medium inline-flex items-center group">
+                <span className="group-hover:underline">Get Started</span>
                 <i className="fas fa-chevron-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
               </a>
             </div>
+            
             
             {/* Program 2 */}
             <div className="training-card p-8 rounded-xl shadow-md">
@@ -88,7 +85,7 @@ const Training = () => {
               <p className="text-gray-600 mb-4">
                 On-demand courses with personalized coaching and support
               </p>
-              <a href="#" className="text-primary font-medium inline-flex items-center group">
+              <a href="https://menshdigitalbds.com/" className="text-primary font-medium inline-flex items-center group">
                 <span className="group-hover:underline">Explore Platform</span>
                 <i className="fas fa-chevron-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
               </a>
@@ -99,60 +96,21 @@ const Training = () => {
               <div className="feature-icon rounded-full flex items-center justify-center mb-6 text-primary">
                 <i className="fas fa-book text-2xl"></i>
               </div>
-              <h3 className="text-xl font-bold mb-4">Custom Training Manuals</h3>
+              <h3 className="text-xl font-bold mb-4">Developing Customized Training Manuals</h3>
               <p className="text-gray-600 mb-4">
                 Professionally developed materials tailored to your specific needs
               </p>
-              <a href="#" className="text-primary font-medium inline-flex items-center group">
+              <a href="https://biruhminds.com/contact" className="text-primary font-medium inline-flex items-center group">
                 <span className="group-hover:underline">Request Samples</span>
                 <i className="fas fa-chevron-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
               </a>
             </div>
             
-            {/* Program 4 */}
-            <div className="training-card p-8 rounded-xl shadow-md">
-              <div className="feature-icon rounded-full flex items-center justify-center mb-6 text-primary">
-                <i className="fas fa-calendar-check text-2xl"></i>
-              </div>
-              <h3 className="text-xl font-bold mb-4">Full Training Coordination</h3>
-              <p className="text-gray-600 mb-4">
-                End-to-end management of venues, materials & certification
-              </p>
-              <a href="#" className="text-primary font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Get Started</span>
-                <i className="fas fa-chevron-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
-              </a>
-            </div>
+           
             
-            {/* Program 5 */}
-            <div className="training-card p-8 rounded-xl shadow-md">
-              <div className="feature-icon rounded-full flex items-center justify-center mb-6 text-primary">
-                <i className="fas fa-chalkboard-teacher text-2xl"></i>
-              </div>
-              <h3 className="text-xl font-bold mb-4">Expert-Led Workshops</h3>
-              <p className="text-gray-600 mb-4">
-                Business, MEL, research & gender-focused interactive sessions
-              </p>
-              <a href="#" className="text-primary font-medium inline-flex items-center group">
-                <span className="group-hover:underline">View Schedule</span>
-                <i className="fas fa-chevron-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
-              </a>
-            </div>
+           
             
-            {/* Program 6 */}
-            <div className="training-card p-8 rounded-xl shadow-md">
-              <div className="feature-icon rounded-full flex items-center justify-center mb-6 text-primary">
-                <i className="fas fa-graduation-cap text-2xl"></i>
-              </div>
-              <h3 className="text-xl font-bold mb-4">CPD Programs</h3>
-              <p className="text-gray-600 mb-4">
-                Continuing Professional Development workshops & masterclasses
-              </p>
-              <a href="#" className="text-primary font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Accreditation Info</span>
-                <i className="fas fa-chevron-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
-              </a>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -182,7 +140,7 @@ const Training = () => {
               <div className="feature-icon rounded-full flex items-center justify-center mb-4 mx-auto text-primary">
                 <i className="fas fa-cogs text-2xl"></i>
               </div>
-              <h3 className="text-xl font-bold mb-3">Customized Programs</h3>
+              <h3 className="text-xl font-bold mb-3">Developing Training Manuals</h3>
               <p className="text-gray-600">
                 Tailored content to meet your specific objectives
               </p>
@@ -201,75 +159,7 @@ const Training = () => {
         </div>
       </section>
 
-      {/* Resources Section */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Training <span className="gradient-text">Resources</span></h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Download our comprehensive training materials and manuals
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Repeat this block for each document */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="flex items-center justify-between mb-4">
-                <i className="fas fa-file-pdf text-3xl text-red-500"></i>
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded">PDF, 2.4MB</span>
-              </div>
-              <h3 className="font-bold mb-2">Entrepreneurship Training Manual</h3>
-              <a href="#" className="text-primary text-sm font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Download</span>
-                <i className="fas fa-download ml-2 text-xs"></i>
-              </a>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="flex items-center justify-between mb-4">
-                <i className="fas fa-file-pdf text-3xl text-red-500"></i>
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded">PDF, 1.8MB</span>
-              </div>
-              <h3 className="font-bold mb-2">Business Development Guide</h3>
-              <a href="#" className="text-primary text-sm font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Download</span>
-                <i className="fas fa-download ml-2 text-xs"></i>
-              </a>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="flex items-center justify-between mb-4">
-                <i className="fas fa-file-pdf text-3xl text-red-500"></i>
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded">PDF, 3.1MB</span>
-              </div>
-              <h3 className="font-bold mb-2">Leadership Workshop Materials</h3>
-              <a href="#" className="text-primary text-sm font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Download</span>
-                <i className="fas fa-download ml-2 text-xs"></i>
-              </a>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="flex items-center justify-between mb-4">
-                <i className="fas fa-file-pdf text-3xl text-red-500"></i>
-                <span className="text-xs bg-gray-100 px-2 py-1 rounded">PDF, 2.6MB</span>
-              </div>
-              <h3 className="font-bold mb-2">Soft Skills Development</h3>
-              <a href="#" className="text-primary text-sm font-medium inline-flex items-center group">
-                <span className="group-hover:underline">Download</span>
-                <i className="fas fa-download ml-2 text-xs"></i>
-              </a>
-            </div>
-          </div>
-          
-          <div className="text-center mt-10">
-            <a href="#" className="inline-block border border-primary text-primary px-6 py-2 rounded-lg font-medium">
-              View All Resources
-            </a>
-          </div>
-        </div>
-      </section>
-
+      
      
 
       {/* Newsletter Section */}

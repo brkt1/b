@@ -101,7 +101,7 @@ const Services = () => {
                     <p className="text-gray-600 text-sm">Client Satisfaction</p>
                   </div>
                   <div className="flex-1 bg-white p-6 rounded-xl shadow-md border-l-4 border-secondary">
-                    <h3 className="font-bold text-lg mb-2">200+</h3>
+                    <h3 className="font-bold text-lg mb-2">51+</h3>
                     <p className="text-gray-600 text-sm">Projects Completed</p>
                   </div>
                 </div>

@@ -12,8 +12,8 @@ const HomePage = () => {
   const stats = [
     { value: "500+", label: "Businesses Supported" },
     { value: "92%", label: "Success Rate" },
-    { value: "25+", label: "Industry Experts" },
-    { value: "10+", label: "Years Experience" }
+    { value: "51+", label: "Industry Experts" },
+    { value: "5+", label: "Years Experience" }
   ];
 
   const methodologySteps = [

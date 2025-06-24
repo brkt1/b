@@ -13,7 +13,8 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/service", label: "About" },
     { path: "/research", label: "Research" },
-    { path: "/bds", label: "BDS" },
+    { path: "/bds", label: "BDS" }, 
+    { path: "/training", label: "Training" }, 
     { path: "/liyumilketa", label: "Liyu Mikleta" },
     { path: "/projects", label: "Portfolio" },
     { path: "/contact", label: "Contact" }

@@ -197,15 +197,15 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-gradient-to-br from-[rgba(138,219,227,0.1)] to-[rgba(138,219,227,0.05)] rounded-xl p-8 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary mb-2">5+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="bg-gradient-to-br from-[rgba(138,219,227,0.1)] to-[rgba(138,219,227,0.05)] rounded-xl p-8 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">250+</div>
+              <div className="text-4xl font-bold text-primary mb-2">51+</div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="bg-gradient-to-br from-[rgba(138,219,227,0.1)] to-[rgba(138,219,227,0.05)] rounded-xl p-8 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">98%</div>
+              <div className="text-4xl font-bold text-primary mb-2">94%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div className="bg-gradient-to-br from-[rgba(138,219,227,0.1)] to-[rgba(138,219,227,0.05)] rounded-xl p-8 text-center">
@@ -215,6 +215,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+              <div className="text-gray-600">Years Experience</div>
 
       {/* Our Why Section */}
       <section className="py-20">
