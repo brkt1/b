@@ -223,10 +223,10 @@ const Home = () => {
             <div className="w-full md:w-1/2">
               <div className="relative rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="/image/portfolio/team.png"
+                  src={process.env.PUBLIC_URL + '/image/portfolio/team.png'}
                   alt="Our Purpose"
-                  className=" object-cover object-center"
-                  onError={e => { e.target.onerror = null; e.target.src = '/image/Biruhminds_logo.png'; }}
+                  className="object-cover object-center"
+                  onError={e => { e.target.onerror = null; e.target.src = process.env.PUBLIC_URL + '/image/Biruhminds_logo.png'; }}
                 />
               </div>
             </div>
@@ -477,6 +477,43 @@ const Home = () => {
           </div>
         </div>
       </section>
+{/* Partners Section */}
+<section className="partners-section py-16 bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl my-16">
+  <div className="container mx-auto px-6">
+    <h2 className="text-4xl font-extrabold text-center text-primary mb-8 tracking-tight drop-shadow">
+      Our Partners
+    </h2>
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+      <div className="flex-1 text-center md:text-left">
+        <p className="text-gray-700 text-lg mb-6">
+          We collaborate with various organizations to enhance our impact.
+        </p>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-600 text-base">
+          <li className="bg-white rounded-lg shadow p-4 hover:shadow-md transition">
+            <span className="font-semibold text-primary">Local and international NGOs</span>
+          </li>
+          <li className="bg-white rounded-lg shadow p-4 hover:shadow-md transition">
+            <span className="font-semibold text-primary">Government agencies</span>
+          </li>
+          <li className="bg-white rounded-lg shadow p-4 hover:shadow-md transition">
+            <span className="font-semibold text-primary">Private sector partners</span>
+          </li>
+          <li className="bg-white rounded-lg shadow p-4 hover:shadow-md transition">
+            <span className="font-semibold text-primary">Academic and research institutions</span>
+          </li>
+        </ul>
+      </div>
+     
+    </div>
+     <div className=" flex items-center justify-centerv mt-10">
+        <img
+          src="/image/partners.png"
+          alt="Partners"
+          className="w-full h-auto object-contain rounded-2xl shadow-lg bg-white p-6 border border-gray-100 hover:scale-105 transition"
+        />
+      </div>
+  </div>
+</section>
 
       {/* Creative Approach Section */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
@@ -496,17 +533,7 @@ const Home = () => {
               We combine global best practices with localized expertise to create transformative solutions for Ethiopia's development challenges.
             </p>
           </div>
-        <section className="partners-section">
-          <img
-            src="/image/image.png"
-            alt="Partners"
-            className="w-full h-auto object-cover mb-8"
-            style={{ maxHeight: '400px', minHeight: '400px' }}
-          />
-          <div className="text-center mb-8">
-            <p className="text-gray-600">We collaborate with various organizations to enhance our impact.</p>
-          </div>
-        </section>
+       
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Feature 1 - Animated Card */}
@@ -543,7 +570,7 @@ const Home = () => {
             <div className="group relative h-full bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 p-8 h-full flex flex-col">
-                <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-3xl mb-6 transition-all duration-300 group-hover:bg-accent group-hover:text-white">
+                <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center text-accent text-3xl mb-6 transition-all duration-300 group-hover:bg-accent group_hover:text-white">
                   <i className="fas fa-chart-line"></i>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Measurable Impact</h3>
