@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import PartnersSection from './PartnersSection';
 
 const Home = () => {
   useEffect(() => {
@@ -495,6 +496,17 @@ const Home = () => {
               We combine global best practices with localized expertise to create transformative solutions for Ethiopia's development challenges.
             </p>
           </div>
+        <section className="partners-section">
+          <img
+            src="/image/image.png"
+            alt="Partners"
+            className="w-full h-auto object-cover mb-8"
+            style={{ maxHeight: '400px', minHeight: '400px' }}
+          />
+          <div className="text-center mb-8">
+            <p className="text-gray-600">We collaborate with various organizations to enhance our impact.</p>
+          </div>
+        </section>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Feature 1 - Animated Card */}

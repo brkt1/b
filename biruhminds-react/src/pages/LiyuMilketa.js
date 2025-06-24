@@ -301,7 +301,7 @@ const LiyuMilketa = () => {
                 </div>
               </div>
 
-              <div className="bg-primary/5 p-6 rounded-lg border border-primary/20 mb-8">
+              {/* <div className="bg-primary/5 p-6 rounded-lg border border-primary/20 mb-8">
                 <h4 className="font-semibold text-lg mb-3 text-primary">Featured Speakers</h4>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="text-center">
@@ -350,7 +350,7 @@ const LiyuMilketa = () => {
                   </div>
                 </div>
               </div>
-
+*/}
               <form className="space-y-6" id="registration">
                 <h3 className="text-2xl font-bold text-dark mb-6 text-center">Registration Form</h3>
 
